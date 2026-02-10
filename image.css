@@ -16,7 +16,6 @@ body {
   padding: 2rem;
 }
 
-/* ——— Neon Glass Card ——— */
 .neon-card {
   position: relative;
   width: 100%;
@@ -24,8 +23,6 @@ body {
   padding: 2rem;
   text-align: center;
   border-radius: 28px;
-
-  /* Gradient border using double bg trick */
   border: 3px solid transparent;
   background-image:
     url('bg.png'),
@@ -33,11 +30,8 @@ body {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   -webkit-background-clip: padding-box, border-box;
-
-  /* Glass effect if supported */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   box-shadow: 0 0 30px rgba(0, 255, 200, 0.3);
   transition: all 0.3s ease;
 }
@@ -47,7 +41,6 @@ body {
   transform: scale(1.01);
 }
 
-/* ——— Headings & Text ——— */
 .checkmark {
   font-size: 3rem;
   color: #00ff99;
@@ -68,7 +61,6 @@ h1 span {
   margin-bottom: 1.5rem;
 }
 
-/* ——— Avatar ——— */
 .avatar {
   position: relative;
   width: 120px;
@@ -79,7 +71,7 @@ h1 span {
   box-shadow: 0 0 20px #00ffccaa;
   background: #000;
   z-index: 2;
-  overflow: visible; /* Important: let image break outside */
+  overflow: visible; 
 }
 
 .avatar img {
@@ -94,7 +86,6 @@ h1 span {
   z-index: 3;
 }
 
-/* ——— Info Box ——— */
 .info {
   text-align: left;
   padding: 1rem;
@@ -107,13 +98,10 @@ h1 span {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   -webkit-background-clip: padding-box, border-box;
-
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   box-shadow: 0 0 30px rgba(0, 255, 200, 0.3);
   transition: all 0.3s ease;
-
   margin-bottom: 0.8rem;
   font-size: 0.95rem;
 }
@@ -142,7 +130,6 @@ h1 span {
   text-align: right;
 }
 
-/* ——— CTA Button ——— */
 .button-row {
   display: flex;
   justify-content: space-between;
@@ -164,7 +151,6 @@ h1 span {
   border: 3px solid #ffcc00;
 }
 
-/* 🔙 Back button — classic Zunix pink-orange */
 .btn-back {
   background: linear-gradient(90deg, #ff6600, #ff0066);
   box-shadow: 0 0 12px #ff3399aa;
